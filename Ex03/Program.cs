@@ -2,3 +2,17 @@
 
 //5 -> 2, 4
 //8 -> 2, 4, 6, 8
+
+
+
+int n=5;
+int a=1;
+
+while (a<n)
+{
+   if (a%2==0)
+    {
+    Console.WriteLine(a);
+    }
+}
+Console.WriteLine("End");
