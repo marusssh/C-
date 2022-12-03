@@ -5,7 +5,21 @@
 //44 5 78 -> 78
 //22 3 9 -> 22
 
-int a = 1;
-int b = 2;
-int с = 3;
-int max = a;
+int a = 44;
+int b = 78;
+int c = 22;
+int max =0;
+
+if ( a > b )
+{
+    max = a;
+}
+else 
+{
+    max=b;
+}
+if (max < c)
+{
+    max = c;
+}
+ Console.WriteLine (max);
