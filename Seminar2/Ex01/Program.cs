@@ -8,10 +8,9 @@
 
 Console.WriteLine("Введите трёхзначное число: ");
 
-string number = Console.ReadLine();
-int startIndex = 1;
-int length = 1;
+int user_number = Convert.ToInt32(Console.ReadLine ());
 
-String second_number = number.Substring(startIndex, length);
+string user_number_string = Convert.ToString (user_number);
 
-Console.WriteLine(second_number);
+Console.WriteLine(user_number_string[1]);
+
