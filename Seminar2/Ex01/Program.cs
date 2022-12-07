@@ -13,4 +13,3 @@ int user_number = Convert.ToInt32(Console.ReadLine ());
 string user_number_string = Convert.ToString (user_number);
 
 Console.WriteLine(user_number_string[1]);
-
