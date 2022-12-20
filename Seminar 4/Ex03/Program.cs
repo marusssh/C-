@@ -5,6 +5,28 @@
 //  Для проверки можно использовать https://numsys.ru/convert/2097/10/15//
 
 
+int Pow (int a, int b)
+{
+    int result = 1;
+    for (int i = 0; i<b; i++)
+    {
+        result = result * a;
+    }
+    return result;
+}
+
+int ConvertTo15 (int[] value)
+
+{
+    int result =0;
+    int count =value.Length;
+    for (int i = 0; i < count; i++)
+    {
+        result += value[i] * Pow(15, count -1 -i);
+    }
+    return result;
+}
+
 Console.WriteLine("N =  ");
 int N = Convert.ToInt32 (Console.ReadLine ());
 int size = N;
@@ -18,6 +40,6 @@ int size = N;
             
             }
 
-Console.WriteLine (Myliberary.ConvertTo15(array));
+Console.WriteLine (ConvertTo15(array));
 
  
