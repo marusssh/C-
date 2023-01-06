@@ -51,5 +51,5 @@ if (n > DoubleArray.GetLength(0) | m > DoubleArray.GetLength(1))
     }
     else
     {
-        Console.WriteLine ($"Значение элемента: {DoubleArray[n, m]}");
+        Console.WriteLine ($"Значение элемента: {DoubleArray[n-1, m-1]}");
     }
