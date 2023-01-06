@@ -15,7 +15,7 @@ Console.WriteLine("Введите количество столбцов:");
 int n = Convert.ToInt32(Console.ReadLine());
 
 double[,] UserArray = new double [m,n];
-Random UsAr = new Random();
+//Random UsAr = new Random();
 
 void FillRandom (double[,] array)
 {
