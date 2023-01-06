@@ -41,6 +41,7 @@ void PrintArray (int[,] array)
     }
 }
 PrintArray(UserArray);
+Console.WriteLine();
 
 for (int j = 0; j < UserArray.GetLength(1); j++)
 {
