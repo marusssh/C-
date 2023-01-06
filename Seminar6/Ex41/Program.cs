@@ -25,8 +25,17 @@ int max = Myarray[0];
             max = Myarray[i];
 
 }
-            
 
+int count = 0;            
+for (int i = 0; i < Myarray.Length; i++)
+{
+    if (Myarray[i] > 0)
+    {
+        count++;
+    }
+}
+ 
+Console.WriteLine($"Количество элементов > 0: {count}");
            
        
 
