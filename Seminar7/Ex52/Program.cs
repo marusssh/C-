@@ -42,13 +42,13 @@ void PrintArray (int[,] array)
 }
 PrintArray(UserArray);
 
-for (int j = 0; j < n; j++)
+for (int j = 0; j < UserArray.GetLength(1); j++)
 {
     double ArithMean = 0;
-    for (int i = 0; i < m; i++)
+    for (int i = 0; i < UserArray.GetLength(0); i++)
     {
-        ArithMean = ArithMean+UserArray[i,j];
+        ArithMean = (ArithMean + UserArray[i,j]);
     }
-    ArithMean = ArithMean/n;
+    ArithMean = ArithMean / m;
+    Console.Write($" {ArithMean}; ");
 }
-Console.WriteLine($"{ArithMean} ");
